@@ -1,4 +1,3 @@
-
 import MainLayout from "@/components/layout/MainLayout";
 import SecurityChatbot from "@/components/chatbot/SecurityChatbot";
 import { Button } from "@/components/ui/button";
@@ -31,8 +30,15 @@ const Index = () => {
 
   return (
     <MainLayout>
-      {/* Hero Section */}
-      <section className="bg-hero-pattern text-white py-16">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative bg-cover bg-center text-white py-16"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(26, 54, 93, 0.8), rgba(42, 67, 101, 0.8)), url('https://images.unsplash.com/photo-1558002038-1055907a6e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
